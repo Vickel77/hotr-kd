@@ -57,7 +57,7 @@ const NewHere = styled(({ className }) => {
 
       {show && <div className="new-comers-message-wrap">
         <Text className="new-comers-message" size="4" color="white">Welcome To</Text>
-        <img src="/hotr-welcome.png" alt="welcome-image" /><br /> <br />
+        <img src="/hotr-welcome.png" alt="welcome" /><br /> <br />
         <Link to="/pages/locate" style={{ textDecoration: "none" }}>
           <Text className="locate-church" size="4" color="primary">LOCATE CHURCH</Text>
         </Link>

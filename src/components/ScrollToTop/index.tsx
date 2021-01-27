@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import { withRouter } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 import ArrowUp from "../Icons/ArrowUp";

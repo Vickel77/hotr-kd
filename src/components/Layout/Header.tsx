@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+
 import Text from "../Text";
-// import BackgroundSlider from 'react-background-slider';
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import '../../App.css';
 import Carousel from 'nuka-carousel';
 
@@ -32,19 +31,19 @@ const Header = styled(({ className }) => {
 
       >
         <div className="carousel-wrap">
-          <img src="/hotr-mission-house.png" width="100%" height="100%" />
+          <img src="/hotr-mission-house.png" width="100%" height="100%" alt="header" />
         </div>
         <div className="carousel-wrap">
-          <img src="/bg-2.jpg" width="100%" height="100%" />
+          <img src="/bg-2.jpg" width="100%" height="100%" alt="header" />
         </div>
         <div className="carousel-wrap">
-          <img src="/pst-paul.jpg" width="100%" height="100%" />
+          <img src="/pst-paul.jpg" width="100%" height="100%" alt="header" />
         </div>
         <div className="carousel-wrap">
-          <img src="/hotr-5.jpg" width="100%" height="100%" />
+          <img src="/hotr-5.jpg" width="100%" height="100%" alt="header" />
         </div>
         <div className="carousel-wrap">
-          <img src="/bg.jpg" width="100%" height="100%" />
+          <img src="/bg.jpg" width="100%" height="100%" alt="header" />
         </div>
 
       </Carousel >
