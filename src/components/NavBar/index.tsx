@@ -54,7 +54,6 @@ const mobileNavAnim = keyframes`
 const WebNav = styled(({ className }) => {
   const { scrolled, handleScroll } = useHandleScroll();
   const [showModal, setShowModal] = useState<boolean>(false);
-
   const NavClass: any = [];
 
   useEffect(() => {
@@ -166,17 +165,6 @@ const MobileNav = styled(({ className }) => {
   })
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const [showModal, setShowModal] = useState<boolean>(false);
-
-  const navAnim = keyframes`
-  from{
-    transform:translateY(-100%);
-    opacity:0.5;
-  }
-  to{
-    transform:translateY(0%);
-    opacity:1;
-  }
-  `
 
   // if (isVisible) {
   //   window.addEventListener("click", () => setIsVisible(false))

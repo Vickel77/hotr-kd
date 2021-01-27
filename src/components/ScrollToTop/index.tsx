@@ -38,7 +38,7 @@ const ScrollToTop = ({ history }: any) => {
     return () => {
       unlisten();
     }
-  }, []);
+  }, [history]);
 
   const ToTop = () => {
     window.scrollTo(0, 0);
