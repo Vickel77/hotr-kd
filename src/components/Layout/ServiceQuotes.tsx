@@ -6,7 +6,7 @@ import { CaretLeft, CaretRight } from "../Icons/Caret"
 const ServiceQuotes = styled(({ className }) => {
   return (
     <div className={className}>
-      <Text className="quotes-header" color="primary" size="6" align="center">SERVICE QUOTES</Text>
+      <Text className="quotes-header" color="primary" size="5" align="center">SERVICE QUOTES</Text>
       <Carousel
         swiping={true}
         autoplay={true}

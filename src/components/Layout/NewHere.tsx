@@ -5,7 +5,7 @@ import Button from "../Button";
 import { Link } from "react-router-dom";
 
 const locateChurch = keyframes`
-  from{transform:scale(.7)}
+  from{transform:scale(.9)}
   to{transform:scale(1)}
 `
 const welcomeMessage = keyframes`
@@ -55,19 +55,34 @@ const NewHere = styled(({ className }) => {
         <Text color="primary" size="3" weight="bold">hope to see you in church</Text>
       </div>
 
-      {show && <div className="new-comers-message-wrap">
-        <Text className="new-comers-message" size="4" color="white">Welcome To</Text>
-        <img src="/hotr-welcome.png" alt="welcome" /><br /> <br />
-        <Link to="/pages/locate" style={{ textDecoration: "none" }}>
-          <Text className="locate-church" size="4" color="primary">LOCATE CHURCH</Text>
-        </Link>
-      </div>}
+      {show && 
+        <>
+          <div className="new-comers-message-wrap">
+            {/* <Text className="new-comers-message" size="4" color="white">Welcome To</Text> */}
+
+          </div>
+          <div className="new-comers-message">
+            <Text color="primary" size="3">
+              We are indeed elated, excited and exelerated to have you 
+              Apple trees do not thrive in the city of Kaduuna becausse of the
+              climatic condition, so has God made a place for you and you for, 
+              when you find that place stay, remain planted and help lift up the
+              hand of the man of God.
+              If the spirit of God is leading yyoyu to stay in this house come and
+              become family and the Lord will richly bless you <br /><br />
+              <strong>click on the locate and find church and connect with us</strong><br /><br />
+              <Link to="/pages/locate" style={{ textDecoration: "none" }}>
+                <Text className="locate-church" size="4" color="primary">LOCATE CHURCH</Text>
+              </Link>
+            </Text>
+          </div>
+        </>}
 
     </div>
   )
 })`
 background:${({ theme }) => theme.colors.white};
-padding:20px 60px;
+padding:20px 30px;
 display:flex;
 flex-flow:row wrap;
 justify-content:space-around;
@@ -79,8 +94,10 @@ align-items:flex-end;
   ${Button} {padding:15px 0;}
 
   .new-comers-message-wrap {
-    background: -webkit-linear-gradient( rgba(0,0,0,.9), rgba(0,0,0,.8)),url("serve1.jpg") no-repeat;
-    background-size:cover;
+    position:relative;
+    background:url("welcome2.jpg") no-repeat;
+    background-size:100% 100%;
+    background-position: 50% 50%;
     height:50vh;
     width:80%;
     display:flex;
@@ -89,25 +106,40 @@ align-items:flex-end;
     align-items:center;
     margin:20px 0 40px;
     transform-origin:50% 0;
-    border-radius:20px;
+    border-radius:15px;
     animation: ${welcomeMessage} .5s alternate;
   }
   .new-comers-message-wrap > * {
     animation: ${welcomeMessages} 1s  alternate;
   }
   .new-comers-message {
-    width:80%;
+    width:70%;
     margin:0 auto;
     padding:20px 0;
+    
+  }
+  .new-comers-message > * {
+    line-height:1.7em;
+    text-align:left;
   }
   .locate-church{
+    width:100%;
+    text-align:center; 
     text-decoration:none;
     cursor:pointer;
     animation: ${locateChurch} 1s infinite alternate;
     
   }
 @media (max-width:600px){
-  ${Button} {margin-top:15px;}
+  padding:20px 20px;
+  
+  ${Button} {margin:0 15px;}
+  .new-comers-message-wrap {
+    background-size:cover;
+    height:30vh;
+    width:100%;
+    margin:20px auto;
+  }
 }
 
 `

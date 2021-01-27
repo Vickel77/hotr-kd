@@ -80,11 +80,6 @@ padding-bottom:50px;
   }
   .prayerWrap {
     width:90%;
-    // display:grid;
-    // grid-template-columns: repeat(auto-fill, 300px);
-    // grid-auto-rows: auto-fill;
-    // grid-gap:10px
-    // justify-content:center;
     margin:50px auto 0;
     
   }
@@ -109,7 +104,7 @@ padding-bottom:50px;
   .prayerField {
     background:#eee;
     color:${({ theme }) => theme.colors.primary};
-    width:40%;
+    width:50%;
     border:none;
     text-align:center;
     border-bottom:1px solid transparent;

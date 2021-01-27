@@ -183,7 +183,7 @@ const MobileNav = styled(({ className }) => {
         <div onClick={() => setIsVisible(false)} className={`mobileNav ${isVisible && "showMobileNav"} `}>
           <div className={`mobilemenu`}>
             <Link onClick={() => setIsVisible(false)} to="/" style={{ textDecoration: 'none' }}>
-              <A className="mobNav" href="#"><Home />Home</A>
+              <A className="mobNav" color="primary" href="#"><Home />Home</A>
             </Link>
             <Link onClick={() => setIsVisible(false)} to="/pages/media" style={{ textDecoration: 'none' }}>
               <A className="mobNav" href="#"><Media />Media</A>
@@ -208,7 +208,6 @@ const MobileNav = styled(({ className }) => {
 display:none;
 width:100%;
 text-align:center;
-color: ${({ theme }) => theme.colors.white};
 z-index:111111;
 .navFixed {position:fixed; top:0; left:0;}
 @media (max-width: 600px){
@@ -217,7 +216,7 @@ z-index:111111;
 .mobileNavHeader {
   background:rgba(255,255,255,.99);
   width:100%;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 5px 5px;
   box-shadow: 0 2px 5px #555;
   position:absolute; top:0; left:0;
   z-index:11111;
@@ -230,7 +229,7 @@ z-index:111111;
 }
 .mobileNavHeadercontent{
   width:90%;
-  padding:10px 0;
+  padding:0;
   margin:0 auto;
   display:flex;
   flex-flow:row nowrap;
@@ -253,7 +252,7 @@ z-index:111111;
 .mobilemenu {
   position:absolute; bottom:0;
   border-radius:20px 20px 0 0;
-  background: ${({ theme }) => theme.colors.primary};
+  background:#333;
   height:80vh;
   width:100%;
   margin:auto;
@@ -268,7 +267,7 @@ z-index:111111;
 }
 .mobNav {
   background: ${({ theme }) => theme.colors.default}; 
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.primary};
   display:flex;
   align-items:center;
   justify-content:center;
@@ -277,7 +276,7 @@ z-index:111111;
 
 }
 .mobNav > *{
-  fill: ${({ theme }) => theme.colors.white};
+  fill: ${({ theme }) => theme.colors.primary};
   padding-right:5px;
 }
 `

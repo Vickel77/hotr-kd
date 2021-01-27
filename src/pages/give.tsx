@@ -33,6 +33,12 @@ const Give = styled(({ className, onClick }) => {
     padding:50px 0;
     border-radius:20px;
   }
+  @media (max-width:600px){
+    .GiveModal {
+      width:90%;
+      padding:30px 10px;
+    }
+  }
 
 `
 

@@ -23,6 +23,7 @@ const Media = styled(({ className }) => {
     </>
   )
 })`
+  background:#fff;
   .mediaHeader {
     width:100%;
     text-align:center;

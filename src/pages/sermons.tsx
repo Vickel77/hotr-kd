@@ -29,9 +29,9 @@ background:#fff;
 width:100%;
 overflow:hidden;
 margin:0px auto 0px;
-padding-bottom:50px;s
+padding-bottom:50px;
 @media (max-width:600px){
-  margin:0px auto 0;
+  margin:20px auto 0;
   width:100%;
   .pageTitle {
     text-align:center;
