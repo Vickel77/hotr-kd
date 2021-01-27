@@ -16,8 +16,8 @@ const Media = styled(({ className }) => {
         <Header className="header" >
           <Text className="mediaHeader" size="6" weight="bold" color="white">MISSION HOUSE MEDIA</Text>
         </Header>
-        <Sermons />
         <Books />
+        <Sermons />
         <Push />
       </div>
     </>

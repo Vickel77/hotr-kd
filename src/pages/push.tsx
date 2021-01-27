@@ -11,6 +11,8 @@ const Push = styled(({ className }) => {
       prayer: [
         "Prayer for God's favor upon the mission house",
         "everyone that steps in the mission house must experience a turn around",
+        "Increase on every side",
+        "Kingdom financers",
         "God bless the mission house"
       ]
     },
@@ -23,16 +25,15 @@ const Push = styled(({ className }) => {
       ]
     },
     {
-      header: "Prayer for The Mission House",
+      header: "Prayer for The Family",
       prayer: [
-        "Pray for God fearing leaders",
-        "Pray for mercy on the nation",
-        "God bless nigeria"
+        "Pray for God Protection on alll family members, at home and abroad",
+        "Pray for God's favor and blessings upon your family",
+        "God bless My Family"
       ]
     }
   ];
 
-  const handleClick = () => {
     prayerPoints.push({
       header: "21days push",
       prayer: ["The ten thousand sons and daughters are coming",
@@ -40,7 +41,6 @@ const Push = styled(({ className }) => {
         "From the east to the west we are blessed"
       ]
     })
-  }
 
   return (
     <>
@@ -49,20 +49,20 @@ const Push = styled(({ className }) => {
           <Text className="pageTitle" size="6" color="white">PUSH</Text>
         </Header>
         <div className="pageText">
-          <Text color="primary" size="4">In House On the Rock We strongly believe in the efficacy of prayer <br /> hence we PUSH: Pray Until Something Happens</Text>
+          <Text color="primary" size="4">In House On the Rock We strongly believe in the efficacy of prayer <br /> hence we <strong> PUSH:</strong> Pray Until Something Happens</Text>
         </div>
-        <div className="prayerWrap">
+        <div className="prayerWrap" >
           {prayerPoints.map((PrayerPoint, idx) =>
-            <div className="prayer" key={idx}>
-              <Text className="" size="4" weight="bold" color="primary">{PrayerPoint.header}</Text>
-              <Text className="" size="3" color="primary">{PrayerPoint.prayer.map((pray, idx) => <div className="prayerPoint">{`${idx + 1}. ${pray}`}</div>)}</Text>
-            </div>
+              <div className="prayer" key={idx}>
+                <Text className="" size="4" weight="bold" color="primary">{PrayerPoint.header}</Text>
+                <Text className="" size="3" color="primary">{PrayerPoint.prayer.map((pray, idx) => <div className="prayerPoint">{`${idx + 1}. ${pray}`}</div>)}</Text>
+              </div>
           )}
         </div>
-        <div className="prayerRequest">
-          <input className="prayerField" type="text" placeholder="send prayer point" />
-          <Button size="3" onClick={handleClick} active>Send prayer</Button>
-        </div>
+        <form action="mailto:kelechialigwo77@gmail.com" className="prayerRequest">
+          <textarea className="prayerField" placeholder="Enter Prayer Request" rows={1} ></textarea>
+          <Button size="3" type="submit" active>Send prayer</Button>
+        </form>
       </div>
     </>
   )
@@ -78,31 +78,48 @@ padding-bottom:50px;
   .pageText {
     margin:30px 0;
   }
+  .prayerWrap {
+    width:90%;
+    // display:grid;
+    // grid-template-columns: repeat(auto-fill, 300px);
+    // grid-auto-rows: auto-fill;
+    // grid-gap:10px
+    // justify-content:center;
+    margin:50px auto 0;
+    
+  }
   .prayer {
-    width:60%;
-    margin: 0px auto;
-    margin-top: 30px;
+    width:70%;
+    margin:40px auto 0;
     padding: 30px 0;
     border-radius:20px;
-    box-shadow: 0 2px 10px #777;
+    box-shadow: 0 2px 10px #999;
   }
-  .prayerPoint {
-    padding-top:10px;
+  .prayer * {
+    padding:5px 0;
   }
   .prayerRequest {
     margin-top:50px;
-    dipslay:flex;
-    flex-flow:row wrap;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    padding: 10px 0;
+    
   }
   .prayerField {
-    background:transparent;
+    background:#eee;
+    color:${({ theme }) => theme.colors.primary};
     width:40%;
     border:none;
     text-align:center;
-    border-bottom:1px solid #aaa;
+    border-bottom:1px solid transparent;
     outline:none;
-    padding:5px;
-
+    margin-right:10px;
+    resize:none;
+  }
+  .prayerField::placeholder {
+    color:${({theme})=> theme.colors.primary};
+    font-size:1.2em;
   }
   .prayerField:focus {
     border-bottom:1px solid ${({ theme }) => theme.colors.primary};

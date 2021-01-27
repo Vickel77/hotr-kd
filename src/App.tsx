@@ -17,7 +17,7 @@ const App = () => {
   const GlobalStyle = createGlobalStyle`
     html, body{
       text-align:center;
-      background-color:#cdcdcd;
+      background-color:#eee;
       margin: 0;
       width:100%;
       overflow-x: hidden;

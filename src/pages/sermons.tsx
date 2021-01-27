@@ -28,7 +28,7 @@ const Sermons = styled(({ className }) => {
 background:#fff;
 width:100%;
 overflow:hidden;
-margin:80px auto 0px;
+margin:0px auto 0px;
 padding-bottom:50px;s
 @media (max-width:600px){
   margin:0px auto 0;

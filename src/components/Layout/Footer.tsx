@@ -7,6 +7,11 @@ import Phone from "../Icons/Phone";
 const Footer = styled(({ className }) => {
   return (
     <div className={className}>
+      <div className="social-media-icons">
+        <div><img src="facebook.png" height="50px" alt="facebook icon"/></div>
+        <div><img src="gmail.png" height="50px" alt="gmail icon"/></div>
+        <div><img src="whatsapp.png" height="50px" alt="whatsapp icon"/></div>
+      </div>
       <div className="footer-main">
         <div>
           <Text size="4" color="primary">ABOUT US</Text>
@@ -43,6 +48,34 @@ const Footer = styled(({ className }) => {
   background:-webkit-linear-gradient(#333, #232323);
   height:auto;
   width:100%;
+  .social-media-icons {
+    width:80%;
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-around;
+  }
+  .social-media-icons > * {
+    width:100%;
+    transition: .2s all;
+  }
+  .social-media-icons div:first-child {
+    border-bottom:2px solid #1876F2;
+  }
+  .social-media-icons div:first-child:hover {
+    background: #1876F2;
+  }
+  .social-media-icons div:nth-child(2) {
+    border-bottom:2px solid #D54C3C;
+  }
+  .social-media-icons div:nth-child(2):hover{
+    background: #D54C3C;
+  }
+  .social-media-icons div:nth-child(3) {
+    border-bottom:2px solid #25D266;
+  }
+  .social-media-icons div:nth-child(3):hover {
+    background: #25D266;
+  }
   .footer-main {
     width:80%;
     margin:0 auto 30px;

@@ -61,7 +61,7 @@ const Books = styled(({ className }) => {
 background:${({ theme }) => theme.colors.white};
 width:100%;
 overflow:hidden;
-padding:0px auto 50px;
+padding-bottom:50px;
 @media (max-width:600px){
   margin:0px auto 50px;
   width:100%;
