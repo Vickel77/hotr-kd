@@ -105,7 +105,7 @@ const WebNav = styled(({ className }) => {
   .nav-scroll {
     position:fixed; top:0; right:0;
     background: rgba(255,255,255,.8);
-    box-shadow: 0 3px 10px #333;
+    box-shadow: 0 3px 5px #333;
     animation:${navAnim} .5s ease alternate;
   }
   .logo {
@@ -175,7 +175,7 @@ const MobileNav = styled(({ className }) => {
         <div className={`mobileNavHeader ${scrolled && "navScroll"}`}>
           <div className="mobileNavHeadercontent">
             <Link onClick={() => setIsVisible(false)} to="/" style={{ textDecoration: 'none' }}>
-              <img className="logo" src="/logo-m.png" alt="logo" />
+              <img className="logo" src="/logo-w.png" width="150px" alt="logo" style={{paddingTop:"3px"}} />
             </Link>
             <div onClick={() => setIsVisible(!isVisible)}><Menu show={isVisible} /></div>
           </div>
@@ -217,7 +217,7 @@ z-index:111111;
   background:rgba(255,255,255,.99);
   width:100%;
   border-radius: 0 0 5px 5px;
-  box-shadow: 0 2px 5px #555;
+  box-shadow: 0 2px 3px #555;
   position:absolute; top:0; left:0;
   z-index:11111;
 }

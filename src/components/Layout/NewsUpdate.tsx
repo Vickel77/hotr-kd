@@ -36,6 +36,7 @@ const NewsCard = styled(({ className, src, title, date, time }: NewsProps) => {
   &:hover .newsDetails {
     opacity:1;
     top:0;
+    border-radius:10px;
   }
   .newsImage {
     width:100%;

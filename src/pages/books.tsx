@@ -60,7 +60,8 @@ background:${({ theme }) => theme.colors.white};
 width:100%;
 overflow:hidden;
 @media (max-width:600px){
-  margin:0px auto 50px;
+  margin:0px auto;
+  padding-bottom:50px;
   width:100%;
   .pageTitle  {
     text-align:center;
@@ -71,7 +72,7 @@ overflow:hidden;
   text-align:center;
 }
 .pageText {
-  margin:30px 00;
+  margin:50px 00;
 }
 .books {
   width:90%;
@@ -81,17 +82,20 @@ overflow:hidden;
   justify-content:space-around;
   perspective:1000px;
   transform-origin:50%;
+  ${Card} {
+    margin-bottom:60px;
+  }
 }
 
 .books > * {
-  box-shadow:-2px 2px 10px #777;
+  box-shadow:-2px 2px 10px #aaa;
   border-radius: 10px;
   transform-origin:50%;
-  transform:rotateY(15deg);
+  transform:rotateY(5deg);
   
 }
 .books > *:hover {
-  box-shadow:0 2px 20px #aaa;
+  box-shadow:0 2px 20px #ccc;
   transform:rotateY(0deg);
 }
 

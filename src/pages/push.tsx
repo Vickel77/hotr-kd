@@ -76,17 +76,16 @@ padding-bottom:50px;
     text-align:left;
   }
   .pageText {
-    margin:30px 0;
+    margin:30px 10px;
   }
   .prayerWrap {
     width:90%;
     margin:50px auto 0;
-    
   }
   .prayer {
     width:70%;
     margin:40px auto 0;
-    padding: 30px 0;
+    padding: 30px 10px;
     border-radius:20px;
     box-shadow: 0 2px 10px #999;
   }

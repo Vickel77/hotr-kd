@@ -22,7 +22,7 @@ const App = () => {
       width:100%;
       overflow-x: hidden;
       position:relative;
-      font-family:'Libre Franklin', 'CMG sans';
+      font-family:'CMG sans';
       transition: all 0.5s linear;
       scroll-behavior:smooth;
     }

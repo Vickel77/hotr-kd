@@ -100,7 +100,7 @@ position:relative;
   width:90%;
   margin:0 auto;
   .quotes-header { width:100%;position:absolute; top:.2em; text-align:center; }
-  .carousel-wrap {height:35vh;}
+  .carousel-wrap {margin-top:10px; height:35vh;}
 }
 `
 export default ServiceQuotes;

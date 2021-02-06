@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400&display=swap');
-.app{
-
-  text-align:center;
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400&display=swap");
+.app {
+  text-align: center;
   width: 100%;
-  overflow-x:hidden;
-  
-
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: "CMG sans";
+  src: local("CMG sans"), url(./fonts/CMGSans-Regular.ttf) format("truetype");
 }

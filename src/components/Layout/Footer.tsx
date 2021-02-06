@@ -8,9 +8,9 @@ const Footer = styled(({ className }) => {
   return (
     <div className={className}>
       <div className="social-media-icons">
-        <div><img src="facebook.png" height="50px" alt="facebook icon"/></div>
-        <div><img src="gmail.png" height="50px" alt="gmail icon"/></div>
-        <div><img src="whatsapp.png" height="50px" alt="whatsapp icon"/></div>
+        <div><img src="/facebook.png" height="50px" alt="facebook icon"/></div>
+        <div><img src="/gmail.png" height="50px" alt="gmail icon"/></div>
+        <div><img src="/whatsapp.png" height="50px" alt="whatsapp icon"/></div>
       </div>
       <div className="footer-main">
         <div>
