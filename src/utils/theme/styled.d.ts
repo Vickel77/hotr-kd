@@ -9,6 +9,7 @@ declare module "styled-components" {
     colors: {
       default: string;
       primary: string;
+      black: string;
       defaultAccent: string;
       primaryAccent: string;
       white: string;

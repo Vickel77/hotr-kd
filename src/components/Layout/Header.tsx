@@ -8,7 +8,7 @@ import Carousel from 'nuka-carousel';
 const Header = styled(({ className }) => {
 
   return (
-    <div className={className} id="top">
+    <div className={className}>
       <Carousel
         swiping={true}
         autoplay={true}
@@ -29,7 +29,7 @@ const Header = styled(({ className }) => {
           }
         }}
 
-      >
+      > 
         <div className="carousel-wrap">
           <img src="/hotr-mission-house.png" width="100%" height="100%" alt="header" />
         </div>
@@ -45,7 +45,6 @@ const Header = styled(({ className }) => {
         <div className="carousel-wrap">
           <img src="/bg.jpg" width="100%" height="100%" alt="header" />
         </div>
-
       </Carousel >
       {/* <Text size="4" align="left" color="white">WELCOME TO</Text>
       <Text className="hotr" size="5" weight="bolder" align="left" color="white">HOUSE ON <br /> THE ROCK KADUNA</Text> */}
@@ -71,6 +70,7 @@ overflow:hidden;
   height:100vh;
   width:100%;
 }
+
 .mission-house {
   background:-webkit-linear-gradient(rgba(0,0,0,.1) 70%, rgba(0,0,0,.8));
   height:100%;

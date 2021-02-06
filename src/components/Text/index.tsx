@@ -14,6 +14,8 @@ export const getFontColor = (color: any, theme: DefaultTheme) => {
       return theme.colors.default;
     case "primary":
       return theme.colors.primary;
+    case "black":
+      return theme.colors.black; 
     case "white":
       return theme.colors.white;
     case "defaultAccent":

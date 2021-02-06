@@ -37,10 +37,10 @@ const Cith = styled(({ className }) => {
   return (
     <>
       <div className={className}>
-        <Header image="/hotr-1.jpg">
+        <Header>
           <div className="header">
-            <Text size="6" weight="bold" color="white" >CITH CENTERS</Text>
-            <Text size="5" color="white" >in the city of Kaduna</Text>
+            <Text size="6" weight="bold" color="primary" >CITH CENTERS</Text>
+            <Text size="5" color="primary" >in the city of Kaduna</Text>
           </div>
         </Header>
         <div className="cithCenters">

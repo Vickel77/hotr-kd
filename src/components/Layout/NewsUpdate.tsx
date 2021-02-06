@@ -30,7 +30,7 @@ const NewsCard = styled(({ className, src, title, date, time }: NewsProps) => {
   border-radius:10px;
   @media (max-width:600px){
     width:100%;
-    padding-bottom:10px;
+    margin-bottom:15px;
   }
   
   &:hover .newsDetails {

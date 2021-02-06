@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Text from "../components/Text";
-import Locate from "../components/Icons/Location";
 import { Header } from "./books";
+import Download from "../components/Icons/download";
 
 const Sermons = styled(({ className }) => {
   return (
@@ -70,7 +70,7 @@ const SermonCard = styled(({ className, src, children }) => {
       <img className="sermonImage" src={src} alt="pastor" />
       <Text color="primary" size="3" weight="bold">{children}</Text>
       <div className="downloadIcon">
-        <Locate color="#8AC23D" size="25" />
+        <Download color="#8AC23D" size="25" />
       </div>
       {/* audio controls */}
     </div>
