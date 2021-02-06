@@ -31,7 +31,7 @@ const Locate = styled(({ className, google, frameborder }: props) => {
       <div className={className}>
         <div className="locate">
           <Header>
-            <Text className="header" size="6" weight="bold" color="primary">THE MISSION HOUSE</Text>
+            <Text className="header" size="5" weight="bold" color="primary">THE MISSION HOUSE</Text>
           </Header>
           <div className="map">
             <iframe title="HOTR The Mission House" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.4722313072198!2d7.4733592144749155!3d10.463389567755511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104d4a360e9cf217%3A0x50f10258357e9ce0!2sGalaxy%20Multipurpose%20Hall!5e0!3m2!1sen!2sng!4v1609283625773!5m2!1sen!2sng" width="100%" height="450" frameBorder="0" style={{ border: 0 }} allowFullScreen={false} aria-hidden="false" tabIndex={0}></iframe>

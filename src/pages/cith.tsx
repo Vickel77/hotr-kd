@@ -39,8 +39,8 @@ const Cith = styled(({ className }) => {
       <div className={className}>
         <Header>
           <div className="header">
-            <Text size="6" weight="bold" color="primary" >CITH CENTERS</Text>
-            <Text size="5" color="primary" >in the city of Kaduna</Text>
+            <Text size="5" weight="bold" color="primary" >CITH CENTERS</Text>
+            <Text size="4" color="primary" >in the city of Kaduna</Text>
           </div>
         </Header>
         <div className="cithCenters">
