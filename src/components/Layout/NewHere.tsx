@@ -51,7 +51,7 @@ const NewHere = styled(({ className }) => {
         <Text color="primary" size="6" weight="bold">?</Text>
       </div>
       <div>
-        <Button onClick={showMessage} size="4" active >JOIN US TODAY</Button>
+        <Button className="join-button" onClick={showMessage} size="4" active >JOIN US TODAY</Button>
         <Text color="primary" size="3" weight="bold">hope to see you in church</Text>
       </div>
 
@@ -91,8 +91,6 @@ align-items:flex-end;
   flex-direction:row;
   justify-content:space-between;
   align-items:center;}
-  ${Button} {padding:15px 0;}
-
   .new-comers-message-wrap {
     position:relative;
     background:url("welcome2.jpg") no-repeat;
@@ -132,8 +130,8 @@ align-items:flex-end;
   }
 @media (max-width:600px){
   padding:20px 20px;
-  
-  ${Button} {margin:0 15px;}
+}
+  ${Button} {margin:15px 15px;}
   .new-comers-message-wrap {
     background-size:cover;
     height:30vh;

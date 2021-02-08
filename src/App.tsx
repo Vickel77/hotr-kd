@@ -36,7 +36,7 @@ const App = () => {
     }
     ::-webkit-scrollbar {width:10px;}
     ::-webkit-scrollbar-track { background: rgba(0,00,00,.00);}
-    ::-webkit-scrollbar-thumb {box-shadow:0 4px 5px #555; height:10px; background: ${({ theme }) => theme.colors.primary};}
+    ::-webkit-scrollbar-thumb { height:10px; background: ${({ theme }) => theme.colors.primary};}
     ::-webkit-scrollbar-thumb:hover {background: ${({ theme }) => theme.colors.white};}
   `;
   return (

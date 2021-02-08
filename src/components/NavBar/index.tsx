@@ -216,14 +216,13 @@ z-index:111111;
 .mobileNavHeader {
   background:rgba(255,255,255,.99);
   width:100%;
-  border-radius: 0 0 5px 5px;
-  box-shadow: 0 2px 3px #555;
   position:absolute; top:0; left:0;
   z-index:11111;
 }
 .navScroll {
-  background:rgba(255,255,255,.8);
+  box-shadow: 0 2px 3px #ccc;
   position:fixed; top:0; left:0;
+  border-radius: 0 0 5px 5px;
   animation:${navAnim} .5s ease alternate;
   z-index:11111;
 }

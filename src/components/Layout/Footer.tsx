@@ -49,7 +49,7 @@ const Footer = styled(({ className }) => {
   height:auto;
   width:100%;
   .social-media-icons {
-    width:80%;
+    width:100%;
     margin: 0 auto;
     display:flex;
     justify-content:space-around;

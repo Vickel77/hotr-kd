@@ -21,13 +21,12 @@ const Menu = styled(({ className, show }) => {
     height:2px;   
   }
   .ham {
-    transform-origin:20%; transition: .5s ease all;
+    transform-origin:15%; transition: .5s ease all;
+    margin-bottom:3px;
   }
-  .ham:first-child{margin-bottom:2.5px;}
-  .ham:nth-child(2){margin-bottom:2.5px;}
+  
   .active{
     background: ${({ theme }) => theme.colors.primary};
-    
   }
   .active:nth-child(1) {
     transform:rotateZ(45deg);
