@@ -35,7 +35,7 @@ const getFontSize = (size: any): string => {
     case "3":
       return "1em";
     case "4":
-      return "1.5em";
+      return "1.25em";
     case "5":
       return "2em";
     case "6":

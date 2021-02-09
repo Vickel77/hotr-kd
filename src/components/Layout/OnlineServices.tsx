@@ -36,12 +36,12 @@ const OnlineServices = styled(({ className }) => {
   .cards ${Card} {
     filter:grayscale(83%);
     border-radius:10px;
-    box-shadow: 0 2px 10px #777;
+    box-shadow: 0 2px 10px #ccc;
   }
   .cards ${Card}:hover {
     filter:grayscale(0%);
     transform:translateY(-5px);
-    box-shadow:0 2px 5px #555;
+    box-shadow:0 2px 5px #999;
   }
   
 

@@ -36,7 +36,7 @@ const Books = styled(({ className }) => {
           <Text className="pageTitle" size="6" color="white" align="right">BOOKS</Text>
         </Header>
         <div className="pageText">
-          <Text color="primary" size="4">You can now Order the best selling books <br /> by Rev Barnabas Arastus</Text>
+          <Text color="primary" size="4">You can now Order the best selling books <br /> by <b>Rev Barnabas Arastus</b></Text>
         </div>
         <div className="books">
           <Card borderRadius="10px 10px 0 0" src="/book-1.jpg" alt="" label="WORD" >

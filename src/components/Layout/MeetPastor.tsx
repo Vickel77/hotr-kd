@@ -106,7 +106,8 @@ const MeetPastor = styled(({ className }) => {
     }
   }
   @media (max-width: 600px) {
-    margin-top: 50px;
+    height: 80vhs;
+    margin-top: 100px;
     width: 90%;
     align-items:flex-start;
     .pastor-card {

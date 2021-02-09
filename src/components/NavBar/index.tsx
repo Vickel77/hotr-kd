@@ -166,6 +166,11 @@ const MobileNav = styled(({ className }) => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const [showModal, setShowModal] = useState<boolean>(false);
 
+  const handleMenuClick =()=>{
+    setIsVisible(!isVisible); 
+    setShowModal(false);
+  }
+
   // if (isVisible) {
   //   window.addEventListener("click", () => setIsVisible(false))
   // }
@@ -177,7 +182,7 @@ const MobileNav = styled(({ className }) => {
             <Link onClick={() => setIsVisible(false)} to="/" style={{ textDecoration: 'none' }}>
               <img className="logo" src="/logo-w.png" width="150px" alt="logo" style={{paddingTop:"3px"}} />
             </Link>
-            <div onClick={() => setIsVisible(!isVisible)}><Menu show={isVisible} /></div>
+            <div onClick={handleMenuClick}><Menu show={isVisible} /></div>
           </div>
         </div>
         <div onClick={() => setIsVisible(false)} className={`mobileNav ${isVisible && "showMobileNav"} `}>
@@ -220,7 +225,7 @@ z-index:111111;
   z-index:11111;
 }
 .navScroll {
-  box-shadow: 0 2px 3px #ccc;
+  box-shadow: 0 2px 3px rgba(0,0,0,.15);
   position:fixed; top:0; left:0;
   border-radius: 0 0 5px 5px;
   animation:${navAnim} .5s ease alternate;
@@ -273,6 +278,9 @@ z-index:111111;
   font-size:1.2em;
   margin-bottom:50px;
 
+}
+.mobNav:active {
+  tra
 }
 .mobNav > *{
   fill: ${({ theme }) => theme.colors.primary};

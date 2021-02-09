@@ -79,6 +79,7 @@ const Corevalues = styled(({ className }) => {
       text-align:center;
       font-size:3em;
       line-height:.5em;
+      opacity:.3;
     }
     .core-values > .word, .worship, .prayer { width:90%; margin:00 auto; }
     .core-values > div > * {padding-bottom:25px;}

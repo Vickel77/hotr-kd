@@ -91,6 +91,7 @@ align-items:flex-end;
   flex-direction:row;
   justify-content:space-between;
   align-items:center;}
+  ${Button} {padding:10px 0px;}
   .new-comers-message-wrap {
     position:relative;
     background:url("welcome2.jpg") no-repeat;

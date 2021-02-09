@@ -1,4 +1,3 @@
-
 import Text from "../Text";
 import styled from "styled-components";
 import '../../App.css';
@@ -87,9 +86,10 @@ overflow:hidden;
 }
 
 @media (max-width: 600px){
-  min-height: 40vh;
+  min-height:35vh;
+  margin-top:50px;
   .carousel-wrap {
-    height:40vh;
+    height:35vh;
     width:100%;
   }
   .mission-house {
