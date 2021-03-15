@@ -7,7 +7,6 @@ import Location from "../Icons/Location";
 import Cith from "../Icons/Cith"
 import Money from "../Icons/Money";
 import Menu from "../Menu";
-import Give from "../../pages/give";
 import useHandleScroll from "../../hooks/useHandleScroll"
 import { Link, NavLink } from "react-router-dom";
 
@@ -50,10 +49,8 @@ const mobileNavAnim = keyframes`
   }
 `
 
-
-const WebNav = styled(({ className }) => {
+const WebNav = styled(({ className, handleModal }) => {
   const { scrolled, handleScroll } = useHandleScroll();
-  const [showModal, setShowModal] = useState<boolean>(false);
   const NavClass: any = [];
 
   useEffect(() => {
@@ -80,10 +77,11 @@ const WebNav = styled(({ className }) => {
           <NavLink className="navLink" exact activeClassName="active" to="/pages/cith" style={{ textDecoration: 'none' }}>
             <A className="nav normal"><Cith />Cith</A>
           </NavLink>
-          <A onClick={() => setShowModal(true)} className="navLink nav" size="2" active><Money />Give</A>
+          <NavLink className="navLink" exact activeClassName="active" to="/pages/give" style={{ textDecoration: 'none' }}>
+           <A className="navLink nav" size="2" active><Money />Give</A>
+          </NavLink>
         </div>
       </div>
-      {showModal && <Give onClick={() => setShowModal(false)} />}
     </div>
   );
 }
@@ -164,11 +162,9 @@ const MobileNav = styled(({ className }) => {
     window.addEventListener("scroll", handleScroll);
   })
   const [isVisible, setIsVisible] = useState<boolean>(false);
-  const [showModal, setShowModal] = useState<boolean>(false);
 
   const handleMenuClick =()=>{
     setIsVisible(!isVisible); 
-    setShowModal(false);
   }
 
   // if (isVisible) {
@@ -199,12 +195,11 @@ const MobileNav = styled(({ className }) => {
             <Link onClick={() => setIsVisible(false)} to="/pages/cith" style={{ textDecoration: 'none' }}>
               <A className="mobNav" href="#"><Cith size="15" />Cith</A>
             </Link>
-            <Link onClick={() => setIsVisible(false)} to="#" style={{ textDecoration: 'none' }}>
-              <A onClick={() => setShowModal(true)} className="mobNav" href="#" size="2" active><Money />Give</A>
+            <Link onClick={() => setIsVisible(false)} to="/pages/give" style={{ textDecoration: 'none' }}>
+              <A className="mobNav" href="#" size="2" active><Money />Give</A>
             </Link>
           </div>
         </div>
-        {showModal && <Give onClick={() => setShowModal(false)} />}
       </div>
     </>
   );
@@ -220,6 +215,7 @@ z-index:111111;
 }
 .mobileNavHeader {
   background:rgba(255,255,255,.99);
+  border-radius: 0 0 7px 7px;
   width:100%;
   position:absolute; top:0; left:0;
   z-index:11111;
@@ -227,7 +223,7 @@ z-index:111111;
 .navScroll {
   box-shadow: 0 2px 3px rgba(0,0,0,.15);
   position:fixed; top:0; left:0;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 7px 7px;
   animation:${navAnim} .5s ease alternate;
   z-index:11111;
 }

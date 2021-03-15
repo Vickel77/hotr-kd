@@ -51,7 +51,7 @@ const NewHere = styled(({ className }) => {
         <Text color="primary" size="6" weight="bold">?</Text>
       </div>
       <div>
-        <Button className="join-button" onClick={showMessage} size="4" active >JOIN US TODAY</Button>
+        <Button className="join-button" onClick={showMessage} size="4" active ><b>JOIN US TODAY</b></Button>
         <Text color="primary" size="3" weight="bold">hope to see you in church</Text>
       </div>
 

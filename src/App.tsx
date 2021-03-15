@@ -12,6 +12,7 @@ import { ThemeProvider, createGlobalStyle } from "styled-components";
 import Theme from "./utils/theme";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
+import Give from "./pages/give";
 
 const App = () => {
   const GlobalStyle = createGlobalStyle`
@@ -39,6 +40,7 @@ const App = () => {
     ::-webkit-scrollbar-thumb { height:10px; background: ${({ theme }) => theme.colors.primary};}
     ::-webkit-scrollbar-thumb:hover {background: ${({ theme }) => theme.colors.white};}
   `;
+
   return (
     <>
       <ThemeProvider theme={Theme}>
@@ -53,10 +55,10 @@ const App = () => {
             <Route path="/pages/sermons" exact component={() => <Sermons />} />
             <Route path="/pages/books" exact component={() => <Books />} />
             <Route path="/pages/push" exact component={() => <Push />} />
+            <Route path="/pages/give" exact component={() => <Give />} />
           </Switch>
           <Footer />
-          <NavBar />
-
+          <NavBar/>
         </Router>
       </ThemeProvider>
 

@@ -8,13 +8,13 @@ const OnlineServices = styled(({ className }) => {
       <div className={className}>
         <div className="cards">
           <Link to="/pages/sermons" style={{ textDecoration: "none" }}>
-            <Card color="white" src="/sermon-m.jpg" alt="" label="Sermons" />
+            <Card color="white" src="/sermon-m.jpg" alt="" label={<strong>Sermons</strong>} />
           </Link>
           <Link to="/pages/books" style={{ textDecoration: "none" }}>
-            <Card color="white" src="/books-m.jpg" alt="" label="Books" />
+            <Card color="white" src="/books-m.jpg" alt="" label={<strong>Books</strong>} />
           </Link>
           <Link to="/pages/push" style={{ textDecoration: "none" }}>
-            <Card color="white" src="/push-m.jpg" alt="" label="PUSH" />
+            <Card color="white" src="/push-m.jpg" alt="" label={<strong>PUSH</strong>} />
           </Link>
           {/* <Link to="/pages/media" style={{ textDecoration: "none" }}>
             <Card color="white" src="/hotr-7.jpg" alt="" label="LOVE" />

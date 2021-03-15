@@ -26,9 +26,7 @@ const Footer = styled(({ className }) => {
         <div>
           <Text size="4" color="primary">SERVICE TIMES</Text>
           <Text size="3" color="white" weight="bold">Sundays</Text>
-          <Text size="3" color="white">1st service: 9:00am <br /> 2nd service: 11:00am</Text>
-          <Text size="3" color="white" weight="bold"> <br /> Wednessdays</Text>
-          <Text size="3" color="white">Mid-week Service: 05:00pm</Text>
+          <Text size="3" color="white">1st service: 9:00am </Text>
         </div>
         <div>
           <Text size="4" color="primary">CONTACT US</Text>

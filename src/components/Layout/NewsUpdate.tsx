@@ -62,17 +62,17 @@ const NewsCard = styled(({ className, src, title, date, time }: NewsProps) => {
 
 const NewsUpdate = styled(({ className }) => {
   const events = [
-    { date: "11 jan 2021", time: "daily", title: "21 days PUSH" },
-    { src: "/serve2.jpg", date: "14 feb 2021", time: "5:30pm", title: "Love Unleashed" },
-    { src: "/serve3.jpg", date: "27 feb 2021", time: "04:00pm", title: "power" },
-    { date: "17 mar 2021", time: "05:00pm", title: "Get Set conference" },
-    { src: "/serve1.jpg", date: "18 july 2021", time: "08:00am", title: "SHOUT" }
+    { date: "11 January 2021", time: "daily", title: "21 days PUSH" },
+    { src: "/serve2.jpg", date: "14 February 2021", time: "5:30pm", title: "Love Unleashed" },
+    { src: "/serve3.jpg", date: "27 February 2021", time: "04:00pm", title: "power" },
+    { date: "17 March 2021", time: "05:00pm", title: "Get Set conference" },
+    { src: "/serve1.jpg", date: "18 July 2021", time: "08:00am", title: "SHOUT" }
   ]
   const Update = events.map((event, idx) => <NewsCard key={idx} src={event.src} date={event.date} time={event.time} title={event.title} />)
   return (
     <>
       <div className={className}>
-        <Text color="primary" size="6" align="center">UPCOMING EVENTS</Text>
+        <Text color="primary" weight="bold" size="6" align="center">UPCOMING EVENTS</Text>
         <div className="news">
           {Update}
         </div>
@@ -90,6 +90,7 @@ const NewsUpdate = styled(({ className }) => {
     width:90%;
     overflow:hidden;
     .news {
+      padding-top:70px;
       justify-content:center;
       align-items:center;
     }
