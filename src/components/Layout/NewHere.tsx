@@ -57,11 +57,9 @@ const NewHere = styled(({ className }) => {
 
       {show && 
         <>
-          <div className="new-comers-message-wrap">
-            {/* <Text className="new-comers-message" size="4" color="white">Welcome To</Text> */}
-
-          </div>
+          
           <div className="new-comers-message">
+            <img className="welcome-img" src="welcome2.jpg" alt="welcome to church"/>
             <Text color="primary" size="3">
               We are indeed elated, excited and exelerated to have you 
               Apple trees do not thrive in the city of Kaduuna becausse of the
@@ -92,24 +90,9 @@ align-items:flex-end;
   justify-content:space-between;
   align-items:center;}
   ${Button} {padding:10px 0px;}
-  .new-comers-message-wrap {
-    position:relative;
-    background:url("welcome2.jpg") no-repeat;
-    background-size:100% 100%;
-    background-position: 50% 50%;
-    height:50vh;
-    width:80%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    margin:20px 0 40px;
-    transform-origin:50% 0;
-    border-radius:15px;
-    animation: ${welcomeMessage} .5s alternate;
-  }
-  .new-comers-message-wrap > * {
-    animation: ${welcomeMessages} 1s  alternate;
+  .welcome-img {
+    height:300px;
+    border-radius:10px;s
   }
   .new-comers-message {
     width:70%;

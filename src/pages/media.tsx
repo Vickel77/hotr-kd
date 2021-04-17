@@ -1,5 +1,6 @@
+import Header from "../components/Header";
 import Sermons from "./sermons";
-import Books, { Header } from "./books";
+import Books from "./books";
 import Push from "./push";
 import styled, { keyframes } from "styled-components";
 import Text from "../components/Text";

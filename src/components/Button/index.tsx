@@ -46,15 +46,15 @@ padding:5px 10px;
 border:none;
 font-size:${(props) => getFontSize(props.size)};
 outline:none;
-box-shadow:0 1px 2px rgba(0,0,0,.2);
+box-shadow:0 1.5px 2px 1px rgba(0,0,0,.06);
 text-decoration:none;
 transition:.05s;
 overflow:hidden;
 width:${props => getSize(props.size)};
 &:hover {
-  background:#8AC23D;
+  background:${({ color, theme }) => color || theme.colors.primary};
   color:#ffffff;
-  box-shadow:0 1px 3px 1px rgba(0,0,0,.2);
+  box-shadow:0 1.5px 3px 1px rgba(0,0,0,.1);
   cursor:pointer;
 }
 & > * {fill: ${({ theme }) => theme.colors.white};}

@@ -103,7 +103,7 @@ const WebNav = styled(({ className, handleModal }) => {
   .nav-scroll {
     position:fixed; top:0; right:0;
     background: rgba(255,255,255,.8);
-    box-shadow: 0 3px 5px #333;
+    box-shadow: 0 3px 5px rgba(0,0,0,.2);
     animation:${navAnim} .5s ease alternate;
   }
   .logo {

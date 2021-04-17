@@ -6,13 +6,13 @@ import { CaretLeft, CaretRight } from "../Icons/Caret"
 const ServiceQuotes = styled(({ className }) => {
   return (
     <div className={className}>
-      <Text className="quotes-header" color="primary" size="5" align="center">SERVICE QUOTES</Text>
+      <Text className="quotes-header" color="primary" weight="bold" size="6" align="center">SERMON SLIDES</Text>
       <Carousel
         swiping={true}
         autoplay={true}
         autoplayInterval={5000}
         wrapAround={true}
-        transitionMode="scroll3d"
+        transitionMode="fade"
         opacityScale={0}
         renderCenterLeftControls={({ previousSlide }) => (
           <button className="caret" onClick={previousSlide}><CaretLeft className="caret" color="white" /></button>
@@ -27,51 +27,28 @@ const ServiceQuotes = styled(({ className }) => {
         }}
 
       >
-        <div className="carousel-wrap">
-          <Text size="4" color="white" align="center">
-            ...To obey is better than to sacrifice, and to harken than the fat of rams
-          </Text>
-        </div>
-        <div className="carousel-wrap">
-          <Text size="4" color="white" align="center">
-            And Isaac sowed in that land, and in the same reaped an hundred fold harvest
-          </Text>
-        </div>
-        <div className="carousel-wrap">
-          <Text size="4" color="white" align="center">
-            Abraham is the father of faith
-          </Text>
-        </div>
-        <div className="carousel-wrap">
-          <Text size="4" color="white" align="center">
-            Living is seeding, sow seeds of kindness, love and compassion for in due season you will reap, if you faint not
-          </Text>
-        </div>
+
+        <div className="carousel-wrap" style={{backgroundImage: 'url("/pst-paul.jpg")'}} />
+        <div className="carousel-wrap" style={{backgroundImage: 'url("/hotr-5.jpg")'}}/>
+        <div className="carousel-wrap" style={{backgroundImage: 'url("/pst-paul1.jpg")'}}/>
+        <div className="carousel-wrap" style={{backgroundImage: 'url("/pst1.jpg")'}}/>
       </Carousel >
     </div >
   )
 })`
-background: -webkit-linear-gradient(rgba(30,30,30,.8),rgba(30,30,30,.9)), url("/pst1.jpg") no-repeat;
-background-size:cover;
-background-position:0 50%;
-display:flex;
-flex-direction:column;
-align-items:center;
-height:60vh;
+height:70vh;
 width:80%;
-border-radius:20px;
-box-shadow:inset 0 0 10px 5px #000;
-padding:15px 0;
 margin:0 auto;
 position:relative;
-.quotes-header { width:100%;position:absolute; top:.2em; text-align:center;  }
+overflow:hidden;
+.quotes-header { width:100%;z-index:555; text-align:center;  }
 .carousel-wrap {
+  background-size:cover;
   width:100%;
-  height:50vh;
-  display:flex;
+  height:60vh;
   margin:0 auto;
-  justify-content:center;
-  align-items:center;
+  margin-top:30px;
+  
 }
 
 .carousel-wrap ${Text} {width:55%; opacity:.8; padding:50px; border-radius:50px;}
@@ -96,11 +73,12 @@ position:relative;
 
 @media (max-width:600px){
   
-  height:40vh;
+  height:60vh;
   width:90%;
   margin:0 auto;
-  .quotes-header { width:100%;position:absolute; top:.2em; text-align:center; }
-  .carousel-wrap {margin-top:10px; height:35vh;}
+  overflow:hidden;
+  .quotes-header { width:100%;stext-align:center; }
+  .carousel-wrap {height:40vh;}
 }
 `
 export default ServiceQuotes;

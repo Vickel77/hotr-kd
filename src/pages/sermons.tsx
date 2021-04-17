@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Text from "../components/Text";
-import { Header } from "./books";
+import Header from "../components/Header";
 import Download from "../components/Icons/download";
 
 const Sermons = styled(({ className }) => {

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import Text from "../Text";
+import Carousel from 'nuka-carousel';
+import { CaretLeft, CaretRight } from "../Icons/Caret"
 
 interface NewsProps {
   className?: any;
@@ -22,12 +24,12 @@ const NewsCard = styled(({ className, src, title, date, time }: NewsProps) => {
     </div>
   );
 })`
-  height:250px;
-  width:18%;
+  height:400px;
+  width:400px;
   min-width:18%;
   position:relative;
   overflow:hidden;
-  border-radius:10px;
+  
   @media (max-width:600px){
     width:100%;
     margin-bottom:15px;
@@ -36,14 +38,13 @@ const NewsCard = styled(({ className, src, title, date, time }: NewsProps) => {
   &:hover .newsDetails {
     opacity:1;
     top:0;
-    border-radius:10px;
   }
   .newsImage {
     width:100%;
     height:100%;
   }
   .newsDetails{
-    height:250px;
+    height:400px;
     width:100%;
     display:flex;
     flex-direction:column;
@@ -68,35 +69,48 @@ const NewsUpdate = styled(({ className }) => {
     { date: "17 March 2021", time: "05:00pm", title: "Get Set conference" },
     { src: "/serve1.jpg", date: "18 July 2021", time: "08:00am", title: "SHOUT" }
   ]
-  const Update = events.map((event, idx) => <NewsCard key={idx} src={event.src} date={event.date} time={event.time} title={event.title} />)
   return (
     <>
-      <div className={className}>
-        <Text color="primary" weight="bold" size="6" align="center">UPCOMING EVENTS</Text>
-        <div className="news">
-          {Update}
+        <div className={className}>
+          <Text color="primary" weight="bold" size="6" align="center">UPCOMING EVENTS</Text>
+          <Carousel
+            swiping={true}
+            autoplay={true}
+            autoplayInterval={3000}
+            wrapAround={true}
+            transitionMode="scroll3d"
+            opacityScale={0}
+            withoutControls={true}
+            defaultControlsConfig={{
+              pagingDotsStyle: {
+                fill: "#8AC23D00"
+              }
+            }}
+          >
+            {events.map((event, idx) => 
+              <div className="news">
+                <NewsCard key={idx} src={event.src} date={event.date} time={event.time} title={event.title} />
+              </div>
+              )}
+          </Carousel>
         </div>
-      </div>
+      
     </>
   );
 })`
-  width:90%;
+  width:50%;
   margin:0 auto;
-  padding:100px 0px;
+  padding:50px 0px;
   text-align:center;
   position:relative;
   overflow:hidden;
   @media (max-width:600px){
     width:90%;
     overflow:hidden;
-    .news {
-      padding-top:70px;
-      justify-content:center;
-      align-items:center;
-    }
   }
   
   .news {
+    height:400px;
     display:flex;
     flex-flow: row wrap;
     justify-content:space-around;

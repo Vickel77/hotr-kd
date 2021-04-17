@@ -37,7 +37,7 @@ const Footer = styled(({ className }) => {
       </div>
       <div className="footer-aux">
         <Text size="3" color="white">© 2020 HOUSE ON THE ROCK. ALL RIGHTS RESERVED.</Text>
-        <img className="footer-logo" src="/hotr-logo.png" alt="logo" />
+        <img className="footer-logo" src="/logo-w.png" alt="logo" />
       </div>
     </div>
   )
@@ -101,7 +101,7 @@ const Footer = styled(({ className }) => {
     text-align:center;
   }
   .footer-aux > ${Text} {opacity:.56; letter-spacing:3px;}
-  .footer-aux .footer-logo {filter:drop-shadow(0 0 3px #000); opacity:.56;};
+  .footer-aux .footer-logo {filter:drop-shadow(0 0 3px #000) grayscale(100%) brightness(200%); opacity:.56;};
   @media (max-width:600px){
     height:auto;
     .footer-main {

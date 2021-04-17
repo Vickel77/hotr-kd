@@ -64,7 +64,7 @@ const Corevalues = styled(({ className }) => {
     text-align:center;
     font-size:13em;
     opacity:.1;
-    letter-spacing:-0.05em;
+    letter-spacing:-0.09em;
     line-height:.85em;
   }
   .core-values > .word, .worship, .prayer { width:25%; }
@@ -84,7 +84,7 @@ const Corevalues = styled(({ className }) => {
     .core-values > .word, .worship, .prayer { width:90%; margin:00 auto; }
     .core-values > div > * {padding-bottom:25px;}
   }
-  
+
 `
 
 export default Corevalues;

@@ -2,31 +2,7 @@ import styled from "styled-components";
 import Text from "../components/Text";
 import Card from "../components/Card";
 import Button from "../components/Button";
-
-interface props {
-  image?: string;
-  mobImage?: string;
-}
-export const Header = styled.div<props>`
-
-background:${(props) => props.image ? `-webkit-linear-gradient( rgba(0,0,0,0), rgba(0,0,0,0)),url(${props.image}) no-repeat` : `#fff`};
-  background-size:100% 100%;
-  height:50vh;
-  padding:0 30px;
-  display:flex;
-  flex-flow:column nowrap;
-  justify-content:center;
-  align-items:center;
-  @media (max-width:600px){
-    background:${(props) => props.mobImage ? `-webkit-linear-gradient( rgba(0,0,0,0), rgba(0,0,0,0)),url(${props.mobImage}) no-repeat ` : `#fff`};
-    background-size:cover;
-    justify-content:center;
-    height:40vh;
-  }
-
-
-
-`
+import Header from "../components/Header";
 
 const Books = styled(({ className }) => {
   return (
@@ -39,17 +15,23 @@ const Books = styled(({ className }) => {
           <Text color="primary" size="4">You can now Order the best selling books <br /> by <b>Rev Barnabas Arastus</b></Text>
         </div>
         <div className="books">
-          <Card borderRadius="10px 10px 0 0" src="/book-1.jpg" alt="" label="WORD" >
+          <Card borderRadius="10px 10px 0 0" src="/book-1.jpg" alt="" label="Securing the destiny of your family" >
             <Button >READ</Button>
-            <Button active>ORDER NOW</Button>
+            <a href="https://www.amazon.com/SECURING-DESTINY-YOUR-FAMILY-MANUAL-ebook/dp/B077T1RPBC">
+              <Button active>ORDER NOW</Button>
+            </a>
           </Card>
           <Card borderRadius="10px 10px 0 0" src="/book-2.jpg" alt="s" label="More and more money in a recession">
             <Button >READ</Button>
-            <Button active>ORDER NOW</Button>
+            <a href="https://www.amazon.com/MORE-MONEY-ANY-RECESSION-SUPERNATURAL-ebook/dp/B087754J43">
+              <Button active>ORDER NOW</Button>
+            </a>
           </Card>
           <Card borderRadius="10px 10px 0 0" src="/book-3.jpg" alt="s" label="The super blessed life">
             <Button >READ</Button>
-            <Button active>ORDER NOW</Button>
+            <a href="https://www.amazon.in/SUPER-BLESSED-LIFE-BARNABAS-ARASTUS-ebook/dp/B08776LV2C">
+              <Button active>ORDER NOW</Button>
+            </a>
           </Card>
         </div>
       </div>

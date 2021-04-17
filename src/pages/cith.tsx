@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import Text from "../components/Text";
-import { Header } from "./books";
+import Header from "../components/Header";
 import Home from "../components/Icons/Home";
 
 const media = keyframes`

@@ -1,6 +1,6 @@
 import Header from "../components/Layout/Header";
 import NewHere from "../components/Layout/NewHere";
-import NewsUpdate from "../components/Layout/NewsUpdate";
+import NewsUpdate from "../components/Layout/UpcomingEvents";
 import Corevalues from "../components/Layout/Corevalues";
 import OnlineServices from "../components/Layout/OnlineServices";
 import ServiceQuotes from "../components/Layout/ServiceQuotes";
